@@ -2,9 +2,9 @@ import './bootstrap';
 import { createApp } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
 import App from './components/App.vue';
-import Home from './components/Home.vue';
-import Customers from './components/Customers.vue';
-import Products from './components/Products.vue';
+import Screen1 from './components/Screen1.vue';
+import Screen2 from './components/Screen2.vue';
+import Screen3 from './components/Screen3.vue';
 
 // Create router
 const router = createRouter({
@@ -12,18 +12,22 @@ const router = createRouter({
     routes: [
         {
             path: '/',
-            name: 'home',
-            component: Home
+            redirect: '/screen1'
         },
         {
-            path: '/customers',
-            name: 'customers',
-            component: Customers
+            path: '/screen1',
+            name: 'screen1',
+            component: Screen1
         },
         {
-            path: '/products',
-            name: 'products',
-            component: Products
+            path: '/screen2',
+            name: 'screen2',
+            component: Screen2
+        },
+        {
+            path: '/screen3',
+            name: 'screen3',
+            component: Screen3
         }
     ]
 });
