@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ScreenController;
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\InterviewAnalysisController;
 
 // Test route at the very top
 Route::get('/test-api', function() {
@@ -23,4 +24,7 @@ Route::get('/screen1-text', function() {
 
 Route::get('/screen1', [ScreenController::class, 'screen1']);
 Route::get('/screen2', [ScreenController::class, 'screen2']);
-Route::get('/screen3', [ScreenController::class, 'screen3']); 
+Route::get('/screen3', [ScreenController::class, 'screen3']);
+
+// Interview Analysis Route
+Route::post('/analyze-interview', [InterviewAnalysisController::class, 'analyze']); 

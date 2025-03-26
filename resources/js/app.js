@@ -5,6 +5,7 @@ import App from './components/App.vue';
 import Screen1 from './components/Screen1.vue';
 import Screen2 from './components/Screen2.vue';
 import Screen3 from './components/Screen3.vue';
+import Screen4 from './components/Screen4.vue';
 
 // Create router
 const router = createRouter({
@@ -28,6 +29,11 @@ const router = createRouter({
             path: '/screen3',
             name: 'screen3',
             component: Screen3
+        },
+        {
+            path: '/screen4',
+            name: 'screen4',
+            component: Screen4
         }
     ]
 });

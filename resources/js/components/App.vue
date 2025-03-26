@@ -26,6 +26,13 @@
                     >
                         Screen 3
                     </router-link>
+                    <router-link 
+                        to="/screen4" 
+                        class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-md transition-colors duration-200"
+                        :class="{ 'bg-gray-100': $route.path === '/screen4' }"
+                    >
+                        Screen 4
+                    </router-link>
                 </nav>
             </div>
         </div>
