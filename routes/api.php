@@ -3,6 +3,14 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ScreenController;
+use App\Http\Controllers\BookController;
+
+// Test route at the very top
+Route::get('/test-api', function() {
+    return response()->json(['message' => 'API routes are working']);
+});
+
+Route::get('/books', [BookController::class, 'index']);
 
 // Test route to verify API is working
 Route::get('/test', function() {

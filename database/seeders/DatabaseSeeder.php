@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
             ProductSeeder::class,
             CustomerSeeder::class,
             InvoiceSeeder::class,
+            BookSeeder::class,
         ]);
     }
 }
